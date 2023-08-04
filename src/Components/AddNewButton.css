@@ -1,0 +1,40 @@
+/* @import url('@material/floating-label/mdc-floating-label'); */
+fieldset {
+    padding: 0;
+    width: 20%;
+    /* border: none; */
+    margin-left: 200px;
+}
+input {
+    width: 20%;
+    font-family: monospace;
+    font-size: 22px;
+    padding: 15px 10px;
+    background: transparent;
+
+
+    
+}
+legend {
+    /* padding: 10px 20px; */
+    margin-left: 15px;
+
+
+    background: transparent;
+}
+label {
+    font-size: 25px;
+    cursor: text;
+
+    background: transparent;
+}
+input:focus~legend{
+    color: hotpink;
+ 
+    /* background: #fff; */
+}
+input:focus~legend>label{
+    
+    font-size: 18px;
+}
+  
