@@ -58,6 +58,7 @@ tr:last-child{
     width: 300px;
     padding: 10px;
     text-align: center;
+    margin: 10px;
     border-radius: 50px;
     background-color: rgb(215, 222, 223);
 }

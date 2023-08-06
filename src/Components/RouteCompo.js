@@ -16,7 +16,7 @@ const RouteComp = () => {
     { Name: 'Biden', Age: 26, Course: 'MERN', Batch: 'September', },
     { Name: 'Barar', Age: 22, Course: 'MERN', Batch: 'September', },
     { Name: 'Christ', Age: 23, Course: 'MERN', Batch: 'October', },
-    { Name: 'Elent', Age: 24, Course: 'MERN', Batch: 'November', }
+    // { Name: 'Elent', Age: 24, Course: 'MERN', Batch: 'November', }
   ])
   return (
     <>

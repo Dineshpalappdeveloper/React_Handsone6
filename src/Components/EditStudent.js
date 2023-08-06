@@ -32,27 +32,48 @@ const EditStudent = () => {
   return (
     <div className='add-parent'>
       <form action='/Student'>
+        <diV className="display">
+
+          <div>
 
 
-        <label >Name</label>
-        <input type='text' id='name' name='Name' placeholder={ContextData.Students[IndexValue].Name} onChange={handleChange} required />
-        <div class="form-floating mb-3 mt-3">
-          <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" />
-          <label for="email">Email</label>
-        </div>
+            <label >Name</label>
+            <input type='text' id='name' name='Name' placeholder={ContextData.Students[IndexValue].Name} onChange={handleChange} required />
+
+          </div>
+
+          <div>
 
 
 
+            <label >Age</label>
+            <input type='text' id='age' name='Age' placeholder={ContextData.Students[IndexValue].Age} onChange={handleChange} required /><br />
+          </div>
+        </diV>
+        <diV className="display">
+          <div>
 
-        <label >Age</label>
-        <input type='text' id='age' name='Age' placeholder={ContextData.Students[IndexValue].Age} onChange={handleChange} required /><br />
-        <label htmlFor='course'>Course</label>
-        <input type='text' id='course' name='Course' placeholder={ContextData.Students[IndexValue].Course} onChange={handleChange} required /><br />
-        <label htmlFor='batch'>Batch</label>
-        <input type='text' id='batch' name='Batch' placeholder={ContextData.Students[IndexValue].Batch} onChange={handleChange} required /><br />
-        <button type='button' onClick={() => Navigate(-1)}>Cancel</button><br />
-        <button type='button' onClick={handleClick}>Update</button><br />
-      </form>
+
+            <label htmlFor='course'>Course</label>
+            <input type='text' id='course' name='Course' placeholder={ContextData.Students[IndexValue].Course} onChange={handleChange} required /><br />
+
+          </div> <div>
+
+
+            <label htmlFor='batch'>Batch</label>
+            <input type='text' id='batch' name='Batch' placeholder={ContextData.Students[IndexValue].Batch} onChange={handleChange} required /><br />
+          </div>  </diV>
+        <diV className="display1">
+
+          <div>
+
+
+            <button type='button' onClick={() => Navigate(-1)}>Cancel</button><br />
+
+          </div>
+          <diV className="space">
+            <button type='button' onClick={handleClick}>Update</button><br />
+          </diV>  </diV>  </form>
     </div>
   )
 }
